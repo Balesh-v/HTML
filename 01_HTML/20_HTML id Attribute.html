@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        th {
+            background-color: lightgray;
+        }
+        td {
+            text-align: center;
+        }
+        code {
+            display: block;
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="set1">
+      <h1>HTML id Attribute</h1>
+
+      <p>
+        The HTML id attribute is used to specify a unique id for an HTML
+        element. You cannot have more than one element with the same id in an
+        HTML document.
+      </p>
+
+      <p>
+        The id attribute is used to uniquely identify an HTML element. It can
+        be used by CSS and JavaScript to select and manipulate the element.
+      </p>
+
+      <h2>Example</h2>
+
+      <code>
+        &lt;h1 id="main-heading"&gt; This is the main heading &lt;/h1&gt; <br />
+        &lt;p id="first-paragraph"&gt; This is the first paragraph. &lt;/p&gt; <br />
+      </code>
+
+      <h2>Output</h2>
+
+      <code>
+        <h1 id="main-heading">This is the main heading</h1>
+        <p id="first-paragraph">This is the first paragraph.</p>
+      </code>
+
+      <p>The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.</p>
+
+        <h2>Example</h2>
+
+        <code>
+          #main-heading { <br />
+          &nbsp;&nbsp;color: blue; <br />
+          } <br />
+          #first-paragraph { <br />
+          &nbsp;&nbsp;font-size: 20px; <br />
+          }
+
+        </code>
+
+        <h2>Output</h2>
+       
+
+        <code>
+            <h1 id="main-heading" style="color: blue;">This is the main heading</h1>
+            <p id="first-paragraph" style="font-size: 20px;">This is the first paragraph.</p>
+        </code>
+
+        <h2>Difference Between Class and ID</h2>
+
+        <table>
+          <tr>
+            <th>Class</th>
+            <th>ID</th>
+          </tr>
+          <tr>
+            <td>A class can be used on multiple elements.</td>
+            <td>An id must be unique and can only be used on one element.</td>
+          </tr>
+          <tr>
+            <td>A class is defined with a period (.) in CSS.</td>
+            <td>An id is defined with a hash (#) in CSS.</td>
+          </tr>
+            <tr>
+                <td>A class is used to group elements.</td>
+                <td>An id is used to identify a single element.</td>
+            </tr>
+        </table>
+    </div>
+  </body>
+</html>

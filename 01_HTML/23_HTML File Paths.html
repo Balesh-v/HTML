@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        code {
+           
+         font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div id="set1">
+        <h1>HTML File Paths</h1>
+        <p>File paths are used to link to other documents.</p>
+
+        <h2>Absolute File Paths</h2>
+
+        <p>An absolute file path contains the full URL to another document, including the protocol (http:// or https://). <br> Example: </p>
+
+        <code>
+            &lt;a href="https://www.example.com/page1.html"&gt;This is a link&lt;/a&gt;
+        </code>
+
+        <h2>Relative File Paths</h2>
+
+        <p>A relative file path contains only the file name or folder name(s) and the file name. <br> The link is relative to the current page. <br> Example: </p>
+
+        <code>
+            &lt;a href="page1.html"&gt;This is a link&lt;/a&gt; <br> <br>
+
+            &lt;a href="folder/page1.html"&gt;This is a link&lt;/a&gt; <br> <br>
+
+            &lt;a href="../page1.html"&gt;This is a link&lt;/a&gt;
+
+        </code>
+
+        <h2>Root Relative File Paths</h2>
+
+        <p>A root relative file path starts with a forward slash (/) and contains the full path from the root of the website. <br> Example: </p>
+
+        <code>
+            &lt;a href="/folder/page1.html"&gt;This is a link&lt;/a&gt;
+        </code>
+
+        <h2>File Path Tips</h2>
+
+        <ul>
+            <li>Use absolute paths for links to other websites.</li>
+            <li>Use relative paths for links within your own website.</li>
+            <li>Use root relative paths if you want to ensure that the link works regardless of the current page's location within the site structure.</li> 
+        </ul>
+
+        <h2>Note</h2>
+
+        <p>File paths are case-sensitive on most web servers. <br> Always use the correct case when specifying file and folder names in your paths.</p>
+
+        <h2>Example</h2>
+
+        <code>
+            &lt;a href="https://www.example.com/page1.html"&gt;This is a link&lt;/a&gt; <br> <br>
+
+            &lt;a href="page1.html"&gt;This is a link&lt;/a&gt; <br> <br>
+
+            &lt;a href="folder/page1.html"&gt;This is a link&lt;/a&gt; <br> <br>
+
+            &lt;a href="../page1.html"&gt;This is a link&lt;/a&gt; <br> <br>
+
+            &lt;a href="/folder/page1.html"&gt;This is a link&lt;/a&gt;
+        </code>
+
+        <h2>Conclusion</h2>
+
+        <p>Understanding file paths is essential for creating effective links in your HTML documents. By using the appropriate type of file path, you can ensure that your links work correctly and provide a better user experience.</p>
+
+        
+    </div>
+</body>
+</html>

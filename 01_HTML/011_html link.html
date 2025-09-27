@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div id="set1">
+      <h1>HTML Links - Hyperlinks</h1>
+      <p>
+        HTML links are hyperlinks. You can click on a link and jump to another
+        document. When you move the mouse over a link, the mouse arrow will turn
+        into a little hand.
+      </p>
+
+      <h2>HTML Links - Syntax</h2>
+
+        <p>
+            The HTML <span>&lt;a&gt;</span> tag defines a hyperlink. It has the following syntax:
+            <code>&lt;a  href="url"&gt;link text&lt;/a&gt;</code>
+        </p>
+
+        <h3>Example</h3>
+
+        <p>
+            The following example creates a link to W3Schools:
+            <code>&lt;a href="https://www.google.com/"&gt;Visit google&lt;/a&gt;</code>
+
+            <h4>Output</h4>
+            <code><a href="https://www.google.com/">Visit google</a></code>
+        </p>
+
+        <h2>HTML Links - The target Attribute </h2>
+        <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+
+        <p>The <span>target</span> attribute specifies where to open the linked document.</p>
+        <p>The <span>target</span> attribute can have one of the following values:</p>
+
+        <ul style="margin: 0px 0px 0px 30px;">
+          <li><span>_blank</span> - Opens the linked document in a new window or tab.</li>
+          <li><span>_self</span> - Opens the linked document in the same frame as it was clicked (this is default).</li>
+          <li><span>_parent</span> - Opens the linked document in the parent frame.</li>
+          <li><span>_top</span> - Opens the linked document in the full body of the window.</li>
+        </ul>
+
+        <p>Example:</p>
+        <code>&lt;a href="https://www.google.com/" target="_blank"&gt;Visit google&lt;/a&gt;</code>
+        <h4>Output</h4>
+        <code><a href="https://www.google.com/" target="_blank">Visit google</a></code>
+
+
+        <h2>HTML Links - Use an Image as a Link</h2>
+
+        <p>You can use an image as a link by placing the image inside the <span>&lt;a&gt;</span> tag.</p>
+        <p>Example:</p>
+        <code>&lt;a href="https://www.google.com/"&gt;&lt;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width: 100px; height: 100px;" /&gt;&lt;/a&gt;</code>
+        <h4>Output</h4>
+        <code>
+          <a href="https://www.google.com/">
+            <img src="Images/download.png" alt="google" style="width: 100px; height: 100px;" />
+          </a>
+        </code>
+
+        <h2>Link to an Email Address</h2>
+
+        <p>You can create a link that opens the user's email program to send an email by using the <span>mailto:</span> protocol.</p>
+        <p>Example:</p>
+        <code>&lt;a href="mailto:sample@gmail.com"&gt;Send Email&lt;/a&gt;</code>
+        <h4>Output</h4>
+        <code><a href="mailto:sample@gmail.com">Send Email</a></code>
+
+        <h2>Link to a Phone Number</h2>
+        <p>You can create a link that opens the user's phone dialer to call a number by using the <span>tel:</span> protocol.</p>
+        <p>Example:</p>
+        <code>&lt;a href="tel:+1234567890"&gt;Call Us
+        &lt;/a&gt;</code>
+        <h4>Output</h4>
+        <code><a href="tel:+1234567890">Call Us</a></code>
+
+        <h3>Button as a Link</h3>
+        <p>You can also use a button as a link by wrapping the button inside the <span>&lt;a&gt;</span> tag.</p>
+        <p>Example:</p>
+        <code>&lt;a href="https://www.google.com/"&gt;&lt;
+button type="button"&gt;Visit Google&lt;/button&gt;&lt;/a&gt;</code>
+        <h4>Output</h4>
+        <code>
+          <a href="https://www.google.com/">
+            <button type="button">Visit Google</button>
+          </a>
+
+        </code>
+
+        <h2>Link Titles</h2>
+        <p>You can add a title to a link using the <span>title</span> attribute. The title will be displayed as a tooltip when the user hovers over the link.</p>
+        <p>Example:</p>
+        <code>&lt;a href="01_Introduction.html" title="Visit Google"&gt;go to introduction html&lt;/a&gt;</code>
+        <h4>Output</h4>
+        <code><a href="01_Introduction.html" title="Visit Google"> go to introduction html</a></code>
+
+
+    </div>
+  </body>
+</html>

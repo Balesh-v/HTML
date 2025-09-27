@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="set1">
+        <h1>Html table</h1>
+        <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+
+        <img src="Images/images.png" alt="Table Image">
+
+        <h1>Define an HTML Table</h1>
+
+        <p>Define an Html Table in Table tag</p>
+
+        <code>&lt;table&gt; &lt;/table&gt;</code>
+
+        <h2>Table Rows</h2>
+        <p>Each table row is defined by a <span>&lt;tr&gt;</span> and a <span>&lt;/tr&gt;</span> tag.</p>
+        <p>Everything between <span>&lt;tr&gt;</span> and <span>&lt;/tr&gt;</span> is the content of a table row.</p>
+        <code>
+            &lt;table&gt; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br> &lt;/table&gt;   
+        </code>
+
+        <h2>Table Headers</h2>
+        <p>Table headers are defined with the <span>&lt;th&gt;</span> tag.</p>
+        <p>Table headers are bold and centered by default.</p>
+        <p>Table headers are usually used to specify the column heading.</p>
+        <code>
+            &lt;table&gt; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Company &lt;/th&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br> &lt;/table&gt;   
+        </code>
+
+        <h3>Output</h3>
+        <code>
+
+            <table>
+                <tr>
+                    <th> Company </th>
+                </tr>
+            </table>
+        </code>
+
+        <h1>Table Cells</h1>
+
+        <p>Each table cell is defined by a <span>&lt;td&gt;</span> and a <span>&lt;/td&gt;</span> tag.</p>
+        <p><span>td</span> stands for table data.</p>
+        <p>Everything between <span>&lt;td&gt;</span> and <span>&lt;/td&gt;</span> is the content of a table cell.</p>
+        <code>
+            &lt;table&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Company &lt;/th&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br> 
+               
+               &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; selltome &lt;/td&gt;  <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br> &lt;/table&gt; 
+        </code>
+
+        <h2>output</h2>
+
+        <code>
+            <table>
+                <tr>
+                    <th> Company </th>
+                </tr>
+                <tr>
+                    <td> selltome </td>  
+                </tr>
+            </table>
+        </code>
+
+        <h2>Caption</h2>
+        <p>The <span>&lt;caption&gt;</span> tag is used to add a caption to a table.</p>
+        <p>The <span>&lt;caption&gt;</span> tag must be inserted immediately after the <span>&lt;table&gt;</span> tag.</p>
+        <p>By default, the caption is centered above the table.</p>
+        <code>
+            &lt;table&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;caption&gt; Company Data &lt;/caption&gt; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Company &lt;/th&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br> 
+               
+               &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; selltome &lt;/td&gt;  <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br> &lt;/table&gt;
+
+        </code>
+
+        <h2>output</h2>
+        <code>
+            <table>
+                <caption> Company Data </caption>
+                <tr>
+                    <th> Company </th>
+                </tr>
+                <tr>
+                    <td> selltome </td>  
+                </tr>
+            </table>
+        </code>
+
+        <h1>Example</h1>
+        <p>Here is an example of a complete HTML table with a caption, header, and multiple rows and columns:</p>
+
+        <code>
+            &lt;table&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;caption&gt; Company Data &lt;/caption&gt; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Company &lt;/th&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Content&lt;/th&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Country&lt;/th&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br> 
+
+               &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; selltome &lt;/td&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; This is a sample content. &lt;/td&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; USA &lt;/td&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; buyme &lt;/td&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; This is another sample content. &lt;/td&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; UK &lt;/td&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; rentit &lt;/td&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;  This is yet another sample content.&lt;/td&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; India &lt;/td&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; leaseit &lt;/td&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;  This is yet another sample content.&lt;/td&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Canada &lt;/td&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+        </code>
+
+        <h2>output</h2>
+        <p>Add Some Css</p>
+        
+        <code>
+            <table id="table1">
+                <caption class="caption"> Company Data </caption>
+                <tr class="row1">
+                    <th class="header"> Company </th>
+                    <th class="header"> Content</th>
+                    <th class="header">Country</th>
+                </tr>
+                <tr class="row1">
+                    <td> selltome </td>
+                    <td> This is a sample content. </td>
+                    <td> USA </td>
+                </tr>
+                <tr class="row1">
+                    <td> buyme </td>
+                    <td> This is another sample content. </td>
+                    <td> UK </td>
+                </tr>
+                <tr class="row1">
+                    <td> rentit </td>
+                    <td> This is yet another sample content. </td>
+                    <td> India </td>
+                </tr>
+                <tr class="row1">
+                    <td> leaseit </td>
+                    <td> This is more sample content. </td>
+                    <td> Canada </td>
+                </tr>
+            </table>
+        </code> 
+
+        <!-- <h1>Define an HTML Table</h1> -->
+        
+        <!-- <p>A table in HTML consists of table cells inside rows and columns.</p> -->
+
+        <!-- <code>
+            &lt;table&gt; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Company &lt;/th&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; selltome &lt;/td&gt;  <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br> &lt;/table&gt;
+        </code> -->
+
+        <!-- <h2>Table Cells</h2>
+        <p>Each table cell is defined by a <span>&lt;td&gt;</span> and a <span>&lt;/td&gt;</span> tag.</p>
+        <p><span>td</span> stands for table data.</p>
+        <p>Everything between <span>&lt;td&gt;</span> and <span>&lt;/td&gt;</span> is the content of a table cell.</p> -->
+        <!-- <code>
+            &lt;table&gt; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; selltome &lt;/td&gt;  <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br> &lt;/table&gt; 
+        </code> -->
+
+        <!-- <h2>output</h2> -->
+        <!-- <code>
+            <table>
+                <tr>
+                    <th> Company </th>
+                </tr>
+                <tr>
+                    <td> selltome </td>  
+                </tr>
+            </table>
+        </code> -->
+
+    </div>
+</body>
+</html>

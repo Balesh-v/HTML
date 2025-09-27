@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="set1">
+      <h1>Html List</h1>
+      <p>
+        HTML lists are used to group a set of related items in no particular
+        order.
+      </p>
+
+      <h1>Types of HTML Lists</h1>
+
+      <p>There are three types of HTML lists:</p>
+
+      <ul>
+        <li>
+          Ordered List - A list in which the order of the items is important.
+          The list items are marked with numbers (1, 2, 3, etc.) or letters (A,
+          B, C, etc.).
+        </li>
+        <li>
+          Unordered List - A list in which the order of the items is not
+          important. The list items are marked with bullets (•).
+        </li>
+        <li>
+          Description List - A list of terms and their descriptions. The terms
+          are marked with the <code>&lt;dt&gt;</code> tag and the descriptions
+          with the <code>&lt;dd&gt;</code> tag.
+        </li>
+      </ul>
+
+      <h2>Ordered List</h2>
+      <p>
+        An ordered list is defined with the <code>&lt;ol&gt;</code> tag. Each
+        list item is defined with the <code>&lt;li&gt;</code> tag.
+      </p>
+
+      <code>
+        &lt;ol&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 1 &lt;/li&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 2 &lt;/li&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 3 &lt;/li&gt; <br />
+        &lt;/ol&gt;
+      </code>
+
+      <h3>Output</h3>
+      <code>
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+      </code>
+
+      <h2>Unordered List</h2>
+      <p>
+        An unordered list is defined with the <code>&lt;ul&gt;</code> tag. Each
+        list item is defined with the <code>&lt;li&gt;</code> tag.
+      </p>
+
+      <code>
+        &lt;ul&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li &gt; Item 1 &lt;/li&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 2 &lt;/li&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 3 & lt;/li&gt; <br />
+        &lt;/ul&gt;
+      </code>
+
+        <h3>Output</h3>
+
+        <code>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </code>
+
+        <h2>Description List</h2>
+
+        <p>
+          A description list is defined with the <code>&lt;dl&gt;</code> tag.
+          Each term is defined with the <code>&lt;dt&gt;</code> tag, and each
+          description is defined with the <code>&lt;dd&gt;</code> tag.
+        </p>
+
+        <code>
+          &lt;dl&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt; HTML &lt;/dt&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt; Hypertext Markup Language &lt;/dd&gt;
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt; CSS &lt;/dt&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt; Cascading Style Sheets &lt;/dd&gt;
+          <br />
+          &lt;/dl&gt;
+        </code>
+
+        <h3>Output</h3>
+
+        <code>
+          <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+          </dl>
+        </code>
+
+        <h2>Nesting Lists</h2>
+
+        <p>
+          You can also create nested lists, which are lists within lists. To
+          create a nested list, simply add another <code>&lt;ul&gt;</code> or
+          <code>&lt;ol&gt;</code> tag inside an existing list item (
+          <code>&lt;li&gt;</code> ).
+        </p>
+
+        <code>
+          &lt;ul&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 1 &lt;/li&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 2 <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &lt;li&gt; Subitem 1 &lt;/li&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &lt;li&gt; Subitem 2 &lt;/li&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp; &lt;/li&gt; <br />
+          &lt;/ul&gt;
+        </code>
+
+        <h3>Output</h3>
+
+        <code>
+          <ul>
+            <li>Item 1</li>
+            <li>
+              Item 2
+              <ul>
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+              </ul>
+            </li>
+          </ul>
+        </code>
+
+        <h2>List Item Attributes</h2>
+
+        <p>
+          The <code>&lt;li&gt;</code> tag supports the global attributes.
+          However, it does not support the <code>type</code> and
+          <code>value</code> attributes (which are supported by the
+          <code>&lt;ol&gt;</code> tag).
+
+        </p>
+
+        <p>Example</p>
+
+        <code>
+          &lt;ol&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li value="3"&gt; Item 1 &lt;/li&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 2 &lt;/li&gt; <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 3 &lt;/li&gt; <br />
+          &lt;/ol&gt;
+
+        </code>
+
+        <h3>Output</h3>
+
+        <code>
+          <ol>
+            <li value="3">Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+        </code>
+
+
+
+      </div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I frames</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @media screen and (max-width: 600px) {
+            iframe {
+                width: 100%;
+                height: auto;
+            }
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div id="set1">
+      <h1>HTML Iframes</h1>
+
+      <p>An HTML iframe is used to display a web page within a web page.</p>
+
+      <h2>HTML Iframe Syntax</h2>
+      <p>
+        The HTML <span>&lt;iframe&gt;</span> tag specifies an inline frame. An
+        inline frame is used to embed another document within the current HTML
+        document.
+      </p>
+      <code>
+          <span>&lt;iframe src="URL" title="description"&gt;</span>
+      </code>
+
+      <h2>Output</h2>
+
+      <code>
+          <iframe
+              src="01_Introduction.html"
+             
+              style="border:1px solid black"
+          ></iframe>
+      </code>
+
+      <h2>Iframe - Set Height and Width</h2>
+
+      <p>You can set the height and width of an iframe using the <span>width</span> and <span>height</span> attributes.</p>
+      <p>The height and width are specified in pixels by default:</p>
+
+      <code>
+         <span>&lt;iframe src="01_Introduction.html" title="iframe example" width="600" height="400" style="border:1px solid black"&gt;</span>
+      </code>
+
+      <h2>Output</h2>
+
+      <code  style="text-align: center;">
+          <iframe
+              src="01_Introduction.html"
+              width="600"
+              height="400"
+              style="border:1px solid black"
+          ></iframe>
+      </code>
+
+    </div>
+  </body>
+</html>

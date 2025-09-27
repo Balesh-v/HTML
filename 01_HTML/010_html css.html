@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="set1">
+      <h1>HTML Styles Css</h1>
+      <p>
+        CSS stands for Cascading Style Sheets. <br />
+        CSS saves a lot of work. It can control the layout of multiple web pages
+        all at once.
+      </p>
+
+      <h1>What is CSS?</h1>
+      <p>
+        Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+        With CSS, you can control the color, font, the size of text, the spacing
+        between elements, how elements are positioned and laid out, what
+        background images or background colors are to be used, different
+        displays for different devices and screen sizes, and much more!
+      </p>
+
+      <h2>Using CSS</h2>
+      <p>CSS can be added to HTML documents in 3 ways:</p>
+      <ul>
+        <li>
+          Inline - by using the <span>style</span> attribute inside HTML
+          elements
+        </li>
+        <li>
+          Internal - by using a <span>style</span> element in the
+          <span>head</span> section
+        </li>
+        <li>
+          External - by using a <span>link</span> element to link to an external
+          CSS file
+        </li>
+      </ul>
+
+      <p>
+        The most common way to add CSS, is to keep the styles in external CSS
+        files. However, in this tutorial we will use inline and internal styles,
+        because this is easier to demonstrate, and easier for you to try it
+        yourself.
+      </p>
+
+        <h2>Inline CSS</h2>
+
+        <p>
+          An inline CSS is used to apply a unique style to a single HTML element.
+          To use inline CSS, add the <span>style</span> attribute to the relevant
+          element. The <span>style</span> attribute can contain any CSS property.
+        </p>
+
+        <p>
+          The following example changes the color of a paragraph to red, and
+          adds a blue background color:
+        </p>
+        <code>
+          &lt;p style="color:red;background-color:blue;"&gt;This is a paragraph.&lt;/p&gt;
+        </code>
+
+        <p>
+          The result of the above code will be a paragraph with red text on a
+          blue background.
+        </p>
+
+        <h2>Internal CSS</h2>
+
+        <p>
+          An internal CSS is used to define a style for a single HTML page. To
+          use internal CSS, add a <span>style</span> element in the
+          <span>head</span> section of the page.
+
+        </p>
+
+        <p>
+          The following example changes the text color of all paragraphs to red:
+        </p>
+        <code>
+            &lt;style&gt;
+            p { color: red; }
+            &lt;/style&gt;
+        </code>
+
+        <p>
+          The result of the above code will be that all paragraphs on the page
+          will have red text.
+
+        </p>
+        <h2>External CSS</h2>
+
+        <p>
+          An external CSS is used to define a style for multiple HTML pages. To
+          use external CSS, add a <span>link</span> element in the
+          <span>head</span> section of the page.
+        </p>
+
+        <p>
+          The following example links to an external CSS file called
+          <span>style.css</span>:
+
+        </p>
+        <code>
+            &lt;link rel="stylesheet" href="style.css"&gt;
+        </code>
+        <p>
+          The result of the above code will be that all styles defined in the
+          <span>style.css</span> file will be applied to the HTML page.
+        </p>
+
+        <h2>CSS Syntax</h2>
+        <p>
+          A CSS rule-set consists of a selector and a declaration block. The
+          selector points to the HTML element you want to style. The declaration
+          block contains one or more declarations separated by semicolons.
+        </p>
+
+        <p>
+          Each declaration includes a CSS property name and a value, separated by
+          a colon. The property name is the style you want to change, and the
+          value is the new value for that style.
+        </p>
+
+        <p>
+          The following example changes the text color of all paragraphs to red
+          and sets the font size to 20px:
+        </p>
+        <code>
+            p {
+                color: red;
+                font-size: 20px;
+            }
+        </code>
+        <p>
+          The result of the above code will be that all paragraphs on the page
+          will have red text and a font size of 20 pixels.
+        </p>
+        
+    </div>
+  </body>
+</html>

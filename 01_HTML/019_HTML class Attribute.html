@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="set1">
+      <h1>HTML class Attribute</h1>
+      <p>
+        The HTML class attribute is used to specify a class for an HTML element.
+        Multiple HTML elements can share the same class.
+      </p>
+
+      <h2>The class Attribute</h2>
+      <p>
+        The class attribute is used to define a class for an HTML element. The
+        class attribute can be used by CSS and JavaScript to select and access
+        specific elements with the same class name.
+      </p>
+
+      <code>
+        &lt;style&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;.example { <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:
+        lightblue; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;} <br />
+        &lt;/style&gt; <br /><br />
+        &lt;h1 class="example"&gt; This is a heading with class " example".
+        &lt;/h1&gt; <br />
+        &lt;p class="example"&gt; This is a paragraph with class "example".
+        &lt;/p&gt; <br />
+      </code>
+
+      <h3>Output</h3>
+
+      <code>
+        <style>
+          .example {
+            background-color: lightblue;
+          }
+        </style>
+
+        <h1 class="example">This is a heading with class "example".</h1>
+        <p class="example">This is a paragraph with class "example".</p>
+      </code>
+
+      <h2>The Syntax For Class</h2>
+      <p>
+        The syntax for the class attribute is: <br />
+        &lt;tag class="className"&gt; &lt;/tag&gt; <br />
+        where "tag" is the HTML element you want to apply the class to, and
+        "className" is the name of the class you want to assign to the element.
+      </p>
+      <code> &lt;tag class="className"&gt; &lt;/tag&gt; </code>
+
+      <p>
+        To create a class; write a period (.) character, followed by a class
+        name. Then, define the CSS properties within curly braces {}:
+      </p>
+
+      <code> .className { property: value; } </code>
+    </div>
+  </body>
+</html>

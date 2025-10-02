@@ -70,3 +70,12 @@
       td{
         padding: 10px;
       }
+
+      #imgen{
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }

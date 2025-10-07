@@ -1,61 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        #Lay{
-            display: flex;
+      #Lay {
+        display: flex;
+      }
+      .lay1 {
+        margin-left: 30px;
+      }
 
-        }
-        .lay1{
-            margin-left: 30px;
-
-        }
-
-        .lay1 ul li {
-            line-height: 33px;
-        }
+      .lay1 ul li {
+        line-height: 33px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="set1">
-        <h1>HTML layout</h1>
-        <p>Websites often display content in multiple columns (like a magazine or a newspaper).</p>
+      <h1>HTML layout</h1>
+      <p>
+        Websites often display content in multiple columns (like a magazine or a
+        newspaper).
+      </p>
 
-        <h1>Html layout Element</h1>
-        <p>HTML has several semantic elements that define the different parts of a web page:</p>
+      <h1>Html layout Element</h1>
+      <p>
+        HTML has several semantic elements that define the different parts of a
+        web page:
+      </p>
 
-        <div id="Lay">
-            <div >
-                <img src="Images/Layout Image.gif" alt="">
-            </div>
-            <div class="lay1" >
-                <ul>
-                    <li><span>&lt;header&gt;</span> - Defines a header for a document or a section</li>
-                    <li><span>&lt;nav&gt;</span> - Defines a set of navigation links</li>
-                    <li><span>&lt;section&gt;</span> - Defines a section in a document</li>
-                    <li><span>&lt;article&gt;</span> -  Defines independent, self-contained content</li>
-                    <li><span>&lt;aside&gt;</span> - Defines content aside from the content (like a sidebar)</li>
-                    <li><span>&lt;footer&gt;</span> -  Defines a footer for a document or a section</li>
-                    <li><span>&lt;details&gt;</span> - Defines additional details that the user can open and close on demand</li>
-                     <li><span>&lt;summary&gt;</span> Defines a heading for the <span>&lt;details&gt;</span> element-</li>
-                </ul>
-            </div>
+      <div id="Lay">
+        <div>
+          <img src="Images/Layout Image.gif" alt="" />
         </div>
+        <div class="lay1">
+          <ul>
+            <li>
+              <span>&lt;header&gt;</span> - Defines a header for a document or a
+              section
+            </li>
+            <li>
+              <span>&lt;nav&gt;</span> - Defines a set of navigation links
+            </li>
+            <li>
+              <span>&lt;section&gt;</span> - Defines a section in a document
+            </li>
+            <li>
+              <span>&lt;article&gt;</span> - Defines independent, self-contained
+              content
+            </li>
+            <li>
+              <span>&lt;aside&gt;</span> - Defines content aside from the
+              content (like a sidebar)
+            </li>
+            <li>
+              <span>&lt;footer&gt;</span> - Defines a footer for a document or a
+              section
+            </li>
+            <li>
+              <span>&lt;details&gt;</span> - Defines additional details that the
+              user can open and close on demand
+            </li>
+            <li>
+              <span>&lt;summary&gt;</span> Defines a heading for the
+              <span>&lt;details&gt;</span> element-
+            </li>
+          </ul>
+        </div>
+      </div>
 
-        <code>
-            <div id="Layout">
-                <header >
-                    Cities
-                </header>
-    
-            </div>
-        </code>
+      <code>
+        <div id="Layout">
+          <header>
+            <h2>Cities</h2>
+          </header>
+          <section>
+            <nav>
+              <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+              </ul>
+            </nav>
 
+            <article>
+              <h1>London</h1>
+              <p>
+                London is the capital city of England. It is the most populous
+                city in the United Kingdom, with a metropolitan area of over 13
+                million inhabitants.
+              </p>
+              <p>
+                Standing on the River Thames, London has been a major settlement
+                for two millennia, its history going back to its founding by the
+                Romans, who named it Londinium.
+              </p>
+            </article>
+          </section>
+          <footer>
+            <p>Footer</p>
+          </footer>
+        </div>
+      </code>
 
+      <h2>HTML Layout Techniques</h2>
+
+      <p>There are four different techniques to create multicolumn layouts. Each technique has its pros and cons:</p>
+
+      <ul>
+        <li>CSS frameworks</li>
+        <li>CSS float property</li>
+        <li>CSS flexbox</li>
+        <li>CSS grid</li>
+      </ul>
     </div>
-</body>
+  </body>
 </html>

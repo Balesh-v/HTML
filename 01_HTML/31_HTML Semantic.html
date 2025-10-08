@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantic</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+          #Lay {
+        display: flex;
+        margin-top: 30px;
+      }
+      .lay1 {
+        margin-left: 30px;
+      }
+
+      .lay1 ul li {
+        line-height: 33px;
+      }
+    </style>
+</head>
+<body>
+    <div id="set1">
+        <h1>HTML Semantic Elements</h1>
+        <p>Semantic elements = elements with a meaning.</p> <hr>
+
+        <h2>What are Semantic Elements?</h2>
+        <p>A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: <span>&lt;div&gt;</span> and  <span>&lt;span&gt; - - Tells nothing about its content. </span></p>
+        <p>Examples of semantic elements: <span>&lt;img&gt;</span> , <span>&lt;table&gt;</span> and <span>&lt;article&gt;</span> - Clearly defines its content.</p><hr>
+
+        <h2>Semantic Elements in HTML</h2>
+        <p>Many web sites contain HTML code like: &lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer" &gt;  to indicate navigation, header, and footer.</p>
+        <p>In HTML there are several semantic elements that can be used to define different parts of a web page:  </p>
+
+         <div id="Lay">
+        <div>
+          <img src="Images/Layout Image.gif" alt="" />
+        </div>
+        <div class="lay1">
+          <ul>
+            <li>
+              <span>&lt;header&gt;</span> 
+             
+            </li>
+            <li>
+              <span>&lt;nav&gt;</span> 
+            </li>
+            <li>
+              <span>&lt;section&gt;</span> 
+            </li>
+            <li>
+              <span>&lt;article&gt;</span> 
+              
+            </li>
+            <li>
+              <span>&lt;aside&gt;</span>
+            </li>
+            <li>
+              <span>&lt;footer&gt;</span> 
+            </li>
+            <li>
+              <span>&lt;details&gt;</span>
+            </li>
+            <li>
+              <span>&lt;summary&gt;</span>
+            </li>
+            <li>
+                <span>&lt;figcaption&gt;</span>
+            </li>
+            <li>
+                <span>&lt;figure&gt;</span>
+            </li>
+            <li>
+                <span>&lt;main&gt;</span>
+            </li>
+            <li>
+                <span>&lt;mark&gt;</span>
+            </li>
+            <li>
+                <span>&lt;time&gt;</span>
+            </li>
+          </ul>
+        </div>
+      </div><hr>
+
+      <h2>HTML &lt;section&gt; Element</h2>
+      <p>The <span> &lt;section&gt;</span> element defines a section in a document.</p>
+      <p>According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."</p>
+      <p>Examples of where a  <span> &lt;section&gt;</span> element can be used:</p>
+      <ul>
+        <li>Chapters</li>
+        <li>Introduction</li>
+        <li>News items</li>
+      </ul>
+      <p>A web page could normally be split into sections for introduction, content, and contact information.<p>
+        Two sections in a document:
+          <code>
+              <span> &lt;section&gt;</span><br>
+              <span>&lt;h1&gt;</span>WWF<span>&lt;/h1&gt;</span><br>
+              <span>&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore magni voluptatum optio dolorem hic aliquam illum labore sunt? Vitae enim laudantium facilis aliquid atque delectus sit officiis. Incidunt, aut pariatur!<span>&lt;/p&gt;</span><br>
+              <span> &lt;/section&gt;</span>
+          </code>
+          <h3>output</h3>
+          <code>
+            <section>
+                <h1>WWE</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore magni voluptatum optio dolorem hic aliquam illum labore sunt? Vitae enim laudantium facilis aliquid atque delectus sit officiis. Incidunt, aut pariatur!</p>
+            </section>
+          </code><hr>
+
+          <h2>HTML &lt;article&gt; Element</h2>
+    </div>
+
+</body>
+</html>

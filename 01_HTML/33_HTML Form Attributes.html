@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        border: 1px solid #fdfcfc;
+        border: 1px solid black;
+        background-color: antiquewhite;
+      }
+
+      tr{
+          text-align: center;
+      }
+
+      td{
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="set1">
+      <h1>HTML Form Attributes</h1>
+      <hr />
+      <p>
+        This chapter describes the different attributes for the HTML
+        <span>&lt;Form&gt;</span> element.
+      </p>
+      <hr />
+
+      <h2>The Action Attribute</h2>
+
+      <p>
+        The <span>action</span> attribute defines the action to be performed
+        when the form is submitted. <br />Usually, the form data is sent to a
+        file on the server when the user clicks on the submit button. <br />
+        In the example below, the form data is sent to a file called
+        "action_page.php". This file contains a server-side script that handles
+        the form data:
+      </p>
+      <hr />
+
+      <code>
+        <span>&lt;Form action="/action_page.php"&gt;</span><br />
+        &nbsp;&nbsp;<span>&lt;label for="fname"&gt;</span>First Name:<span
+          >&lt;/label&gt;</span
+        ><br />
+        &nbsp;&nbsp;<span
+          >&lt;input type="text" id="fname" name="fname"
+          value="Balesh"&gt;</span
+        ><br />
+        &nbsp;&nbsp;<span>&lt;label for="Lname"&gt;</span>Last Name:<span
+          >&lt;/label&gt;</span
+        ><br />
+        &nbsp;&nbsp;<span
+          >&lt;input type="text" id="Lname" name="Lname"
+          value="Varshney"&gt;</span
+        ><br />
+        &nbsp;&nbsp;<span>&lt;input type="submit" value="Submit"&gt;</span
+        ><br />
+        <span>&lt;/Form&gt;</span>
+      </code>
+
+      <h2>output</h2>
+
+      <code>
+        <form action="sumbit.html">
+          <label for="fname">First Name:</label><br />
+          <input type="text" id="fname" name="fname" value="Balesh" /><br />
+          <label for="Lname">Last Name:</label><br />
+          <input
+            type="text"
+            id="Lname"
+            name="Lname"
+            value="Varshney"
+          /><br /><br />
+          <input type="submit" value="sumbit" />
+        </form>
+      </code>
+      <hr />
+
+      <h2>The Target Attribute</h2>
+
+      <p>
+        The <span>target</span> attribute specifies where to display the
+        response that is received after submitting the form. The
+        <span>target</span> attribute can have one of the following values:
+      </p>
+
+      <table>
+        <tr>
+          <th>Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+            <td>_blank</td>
+            <td>The response is displayed in a new window or tab</td>
+        </tr>
+        <tr>
+            <td>_self</td>
+            <td>The response is displayed in the current window</td>
+        </tr>
+        <tr>
+            <td>_parent	</td>
+            <td>The response is displayed in the parent frame</td>
+        </tr>
+        <tr>
+            <td>_top</td>
+            <td>The response is displayed in the full body of the window</td>
+        </tr>
+      </table>
+
+      <p>The default value is _self which means that the response will open in the current window.</p>
+
+      <code>
+          <span>&lt;Form action="/action_page.php" target="_blank"&gt;</span><br />
+      </code>
+
+       <code>
+        <span>&lt;Form action="/action_page.php" target="_blank"&gt;</span><br />
+        &nbsp;&nbsp;<span>&lt;label for="fname"&gt;</span>First Name:<span
+          >&lt;/label&gt;</span
+        ><br />
+        &nbsp;&nbsp;<span
+          >&lt;input type="text" id="fname" name="fname"
+          value="Balesh"&gt;</span
+        ><br />
+        &nbsp;&nbsp;<span>&lt;label for="Lname"&gt;</span>Last Name:<span
+          >&lt;/label&gt;</span
+        ><br />
+        &nbsp;&nbsp;<span
+          >&lt;input type="text" id="Lname" name="Lname"
+          value="Varshney"&gt;</span
+        ><br />
+        &nbsp;&nbsp;<span>&lt;input type="submit" value="Submit"&gt;</span
+        ><br />
+        <span>&lt;/Form&gt;</span>
+      </code>
+
+       <h2>output</h2>
+
+      <code>
+        <form action="sumbit.html" target="_blank">
+          <label for="fname">First Name:</label><br />
+          <input type="text" id="fname" name="fname" value="Balesh" /><br />
+          <label for="Lname">Last Name:</label><br />
+          <input
+            type="text"
+            id="Lname"
+            name="Lname"
+            value="Varshney"
+          /><br /><br />
+          <input type="submit" value="sumbit" />
+        </form>
+      </code>
+      <hr />
+
+      <h2>The Method Attribute</h2>
+      <p>The <span>method</span> attribute specifies the HTTP method to be used when submitting the form data. <br> he form-data can be sent as URL variables (with <span>method="get"</span>) or as HTTP post transaction (with <span>method="post"</span>). <br> The default HTTP method when submitting form data is GET. </p>
+
+      <code>
+          <span>&lt;Form action="/action_page.php" method="get"&gt;</span><br />
+      </code>
+      <code>
+          <span>&lt;Form action="/action_page.php" method="post"&gt;</span><br />
+      </code>
+
+      <h2>Notes on GET:</h2>
+      <ul>
+        <li>Appends the form data to the URL, in name/value pairs</li>
+        <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+        <li>The length of a URL is limited (2048 characters)</li>
+        <li>Useful for form submissions where a user wants to bookmark the result</li>
+        <li>GET is good for non-secure data, like query strings in Google</li>
+      </ul>
+
+      <h2>Notes on POST:</h2>
+
+      <ul>
+        <li>Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)</li>
+        <li>
+            POST has no size limitations, and can be used to send large amounts of data.
+        </li>
+        <li>Form submissions with POST cannot be bookmarked</li>
+      </ul>
+
+      <hr>
+
+      <h2>The Autocomplete Attribute</h2>
+      <p>The autocomplete attribute specifies whether a form should have autocomplete on or off.</p>
+      <p>When autocomplete is on, the browser automatically complete values based on values that the user has entered before.</p>
+
+       <code>
+          <span>&lt;Form action="/action_page.php" autocomplete="on"&gt;</span><br />
+      </code>
+
+      <h2>The Novalidate Attribute</h2>
+      <p>The novalidate attribute is a boolean attribute.</p>
+      <p>When present, it specifies that the form-data (input) should not be validated when submitted.</p>
+
+         <code>
+          <span>&lt;Form action="/action_page.php" novalidate&gt;</span><br />
+      </code>
+
+
+
+    </div>
+  </body>
+</html>

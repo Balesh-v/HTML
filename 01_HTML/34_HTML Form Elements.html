@@ -12,40 +12,84 @@
       <p>This chapter describes all the different HTML form elements.</p>
       <hr />
       <h2>HTML &lt;Form&gt; element.</h2>
-      <p>The HTML <span>&lt;Form&gt;</span> element can contain one or more of the following form elements:</p>
+      <p>
+        The HTML <span>&lt;Form&gt;</span> element can contain one or more of
+        the following form elements:
+      </p>
 
-      <ul style="margin-left: 30px;">
-        <li><span>&lt;input&gt;</span> </li>
-        <li><span>&lt;label&gt;</span> </li>
-        <li><span>&lt;select&gt;</span> </li>
-        <li><span>&lt;textarea&gt;</span> </li>
-        <li><span>&lt;button&gt;</span> </li>
-        <li><span>&lt;fieldset&gt;</span> </li>
-        <li><span>&lt;legend&gt;</span> </li>
-        <li><span>&lt;datalist&gt;</span> </li>
-        <li><span>&lt;output&gt;</span> </li>
-        <li><span>&lt;option&gt;</span> </li>
-        <li><span>&lt;optgroup&gt;</span> </li>
-      </ul> <hr>
+      <ul style="margin-left: 30px">
+        <li><span>&lt;input&gt;</span></li>
+        <li><span>&lt;label&gt;</span></li>
+        <li><span>&lt;select&gt;</span></li>
+        <li><span>&lt;textarea&gt;</span></li>
+        <li><span>&lt;button&gt;</span></li>
+        <li><span>&lt;fieldset&gt;</span></li>
+        <li><span>&lt;legend&gt;</span></li>
+        <li><span>&lt;datalist&gt;</span></li>
+        <li><span>&lt;output&gt;</span></li>
+        <li><span>&lt;option&gt;</span></li>
+        <li><span>&lt;optgroup&gt;</span></li>
+      </ul>
+      <hr />
 
       <h2>The &lt;input&gt; Elements</h2>
-    <p>  One of the most used form elements is the <span>&lt;input&gt;</span> element. <br> The <span>&lt;input&gt; </span> Elements element can be displayed in several ways, depending on the <span>type</span> attribute.
- </p>
+      <p>
+        One of the most used form elements is the
+        <span>&lt;input&gt;</span> element. <br />
+        The <span>&lt;input&gt; </span> Elements element can be displayed in
+        several ways, depending on the <span>type</span> attribute.
+      </p>
 
+      <code>
+        <span>&lt;label for="fname"&gt;</span>First Name:<span
+          >&lt;/label&gt;</span
+        ><br />
+        <span>&lt;input type="text" id="fname" name="fname"&gt;</span><br />
+      </code>
 
- <code>
-    <span>&lt;label for="fname"&gt;</span>First Name:<span>&lt;/label&gt;</span><br />
-    <span>&lt;input type="text" id="fname" name="fname"&gt;</span><br />
- </code>
+      <h3>output</h3>
 
-  <h3>output</h3>
+      <code>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" />
+      </code>
+      <hr />
 
-  <code>
-    <label for="fname">First Name:</label>
-    <input type="text" id="fname" name="fname">
-  </code> <hr>
+      <h2>The &lt;label&gt; Element</h2>
+      <p>The <span>&lt;label&gt;</span> element defines a label for several form elements. <br> The  <span>&lt;label&gt;</span>  element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element. <br>
+      The <span>&lt;label&gt;</span>element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <span>&lt;label&gt;</span> element, it toggles the radio button/checkbox. <br> The <span>for</span> attribute of the <span>&lt;label&gt;</span>  tag should be equal to the id attribute of the <span>&lt;input&gt;</span>  element to bind them together.</p><hr>
 
-  
+      <h2>The &lt;select&gt; Element</h2>
+      <p>The <span> &lt;select&gt;</span> element defines a drop-down list:</p>
+
+      <code>
+         <span>&lt;label for="Car"&gt;</span>Choose a car:<span>&lt;/label&gt;</span><br />
+         <span>&lt;select  id="Car" name="Cars"&gt;</span><br>
+         &nbsp; <span>&lt;option value="volvo"&gt;</span>Volvo<span>&lt;/option&gt;</span><br>
+         &nbsp; <span>&lt;option value="Maruti"&gt;</span>Maruti<span>&lt;/option&gt;</span><br>
+         &nbsp; <span>&lt;option value="Hero"&gt;</span>Hero<span>&lt;/option&gt;</span><br>
+         &nbsp; <span>&lt;option value="Mahendra"&gt;</span>Mahendra<span>&lt;/option&gt;</span><br>
+         <span>&lt;/select&gt;</span>
+      </code>
+
+      <h1>output</h1>
+
+      <code>
+        <label for="Cars">Choose a car</label>
+        <select name="Cars" id="Cars">
+          <option value="Volvo">Volvo</option>
+          <option value="Maruti">Maruti</option>
+          <option value="Hero">Hero</option>
+          <option value="Mahendra">Mahendra</option>
+        </select>
+      </code>
+
+      <p>The <span>&lt;option&gt;</span> element defines an option that can be selected. <br> By default, the first item in the drop-down list is selected. <br> To define a pre-selected option, add the <span>selected</span> attribute to the option:</p>
+
+      <code>
+         <span>&lt;option value="volvo"&gt;</span>Volvo<span>&lt;/option&gt;</span>
+      </code>
+
     </div>
   </body>
 </html>

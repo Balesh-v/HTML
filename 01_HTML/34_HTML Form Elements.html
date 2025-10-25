@@ -56,20 +56,44 @@
       <hr />
 
       <h2>The &lt;label&gt; Element</h2>
-      <p>The <span>&lt;label&gt;</span> element defines a label for several form elements. <br> The  <span>&lt;label&gt;</span>  element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element. <br>
-      The <span>&lt;label&gt;</span>element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <span>&lt;label&gt;</span> element, it toggles the radio button/checkbox. <br> The <span>for</span> attribute of the <span>&lt;label&gt;</span>  tag should be equal to the id attribute of the <span>&lt;input&gt;</span>  element to bind them together.</p><hr>
+      <p>
+        The <span>&lt;label&gt;</span> element defines a label for several form
+        elements. <br />
+        The <span>&lt;label&gt;</span> element is useful for screen-reader
+        users, because the screen-reader will read out loud the label when the
+        user focus on the input element. <br />
+        The <span>&lt;label&gt;</span>element also help users who have
+        difficulty clicking on very small regions (such as radio buttons or
+        checkboxes) - because when the user clicks the text within the
+        <span>&lt;label&gt;</span> element, it toggles the radio
+        button/checkbox. <br />
+        The <span>for</span> attribute of the <span>&lt;label&gt;</span> tag
+        should be equal to the id attribute of the
+        <span>&lt;input&gt;</span> element to bind them together.
+      </p>
+      <hr />
 
       <h2>The &lt;select&gt; Element</h2>
       <p>The <span> &lt;select&gt;</span> element defines a drop-down list:</p>
 
       <code>
-         <span>&lt;label for="Car"&gt;</span>Choose a car:<span>&lt;/label&gt;</span><br />
-         <span>&lt;select  id="Car" name="Cars"&gt;</span><br>
-         &nbsp; <span>&lt;option value="volvo"&gt;</span>Volvo<span>&lt;/option&gt;</span><br>
-         &nbsp; <span>&lt;option value="Maruti"&gt;</span>Maruti<span>&lt;/option&gt;</span><br>
-         &nbsp; <span>&lt;option value="Hero"&gt;</span>Hero<span>&lt;/option&gt;</span><br>
-         &nbsp; <span>&lt;option value="Mahendra"&gt;</span>Mahendra<span>&lt;/option&gt;</span><br>
-         <span>&lt;/select&gt;</span>
+        <span>&lt;label for="Car"&gt;</span>Choose a car:<span
+          >&lt;/label&gt;</span
+        ><br />
+        <span>&lt;select id="Car" name="Cars"&gt;</span><br />
+        &nbsp; <span>&lt;option value="volvo"&gt;</span>Volvo<span
+          >&lt;/option&gt;</span
+        ><br />
+        &nbsp; <span>&lt;option value="Maruti"&gt;</span>Maruti<span
+          >&lt;/option&gt;</span
+        ><br />
+        &nbsp; <span>&lt;option value="Hero"&gt;</span>Hero<span
+          >&lt;/option&gt;</span
+        ><br />
+        &nbsp; <span>&lt;option value="Mahendra"&gt;</span>Mahendra<span
+          >&lt;/option&gt;</span
+        ><br />
+        <span>&lt;/select&gt;</span>
       </code>
 
       <h1>output</h1>
@@ -84,12 +108,169 @@
         </select>
       </code>
 
-      <p>The <span>&lt;option&gt;</span> element defines an option that can be selected. <br> By default, the first item in the drop-down list is selected. <br> To define a pre-selected option, add the <span>selected</span> attribute to the option:</p>
+      <p>
+        The <span>&lt;option&gt;</span> element defines an option that can be
+        selected. <br />
+        By default, the first item in the drop-down list is selected. <br />
+        To define a pre-selected option, add the <span>selected</span> attribute
+        to the option:
+      </p>
 
       <code>
-         <span>&lt;option value="volvo"&gt;</span>Volvo<span>&lt;/option&gt;</span>
+        <span>&lt;option value="volvo"&gt;</span>Volvo<span
+          >&lt;/option&gt;</span
+        >
+      </code>
+      <hr />
+
+      <h2>The &lt;textarea&gt; Element</h2>
+
+      <p>
+        The <span>&lt;textarea&gt;</span> element defines a multi-line text
+        input control:
+      </p>
+      <code>
+        <span>&lt;label for="message"&gt;</span>Message:<span
+          >&lt;/label&gt;</span
+        ><br />
+        <span
+          >&lt;textarea id="message" name="message" rows="4" cols="50"&gt;</span
+        ><br />
+        Write your message here...<br />
+        <span>&lt;/textarea&gt;</span>
       </code>
 
+      <p>
+        The <span>rows</span> attribute specifies the visible number of lines in
+        a text area. <br />The <span>cols</span> attribute specifies the visible
+        width of a text area. <br />
+        This is how the HTML code above will be displayed in a browser:
+      </p>
+
+      <h3>output</h3>
+
+      <code>
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="rows" ="4" cols="50"> </textarea>
+      </code>
+
+      <hr />
+
+      <h2>The &lt;button&gt; Element</h2>
+
+      <p>The <span>&lt;button&gt;</span> element defines a clickable button:</p>
+
+      <code>
+        <span>&lt;button&gt;</span>Click Me!<span>&lt;/button&gt;</span>
+      </code>
+
+      <h3>output</h3>
+
+      <code>
+        <button>Click Me!</button>
+      </code>
+      <hr />
+
+      <h2>The &lt;fieldset&gt; and &lt;legend&gt; Elements</h2>
+
+      <p>
+        The <span>&lt;fieldset&gt;</span> element is used to group related
+        elements in a form, and the <span>&lt;legend&gt;</span> element defines
+        a caption for the <span>&lt;fieldset&gt;</span> element.
+      </p>
+
+      <code>
+        <span>&lt;fieldset&gt;</span><br />
+        &nbsp; <span>&lt;legend&gt;</span>Personal Information<span
+          >&lt;/legend&gt;</span
+        ><br />
+        &nbsp; <span>&lt;label for="name"&gt;</span>Name:<span
+          >&lt;/label&gt;</span
+        ><br />
+        &nbsp; <span>&lt;input type="text" id="name" name="name"&gt;</span
+        ><br />
+        &nbsp; <span>&lt;label for="email"&gt;</span>Email:<span
+          >&lt;/label&gt;</span
+        ><br />
+        &nbsp; <span>&lt;input type="email" id="email" name="email"&gt;</span
+        ><br />
+        <span>&lt;/fieldset&gt;</span>
+      </code>
+
+      <h3>output</h3>
+
+      <code>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+        </fieldset>
+      </code>
+
+      <hr />
+
+      <h2>The &lt;datalist&gt; Element</h2>
+
+      <p>
+        The <span>&lt;datalist&gt;</span> element contains a set of
+        <span>&lt;option&gt;</span> elements that represent the permissible or
+        recommended options available to users in other controls.
+      </p>
+
+      <code>
+        <span>&lt;label for="browser"&gt;</span>Choose your browser:<span
+          >&lt;/label&gt;</span
+        ><br />
+        <span>&lt;input list="browsers" id="browser" name="browser"&gt;</span
+        ><br />
+        <span>&lt;datalist id="browsers"&gt;</span><br />
+        &nbsp; <span>&lt;option value="Chrome"&gt;</span><br />
+        &nbsp; <span>&lt;option value="Firefox"&gt;</span><br />
+        &nbsp; <span>&lt;option value="Safari"&gt;</span><br />
+        &nbsp; <span>&lt;option value="Edge"&gt;</span><br />
+        &nbsp; <span>&lt;option value="Opera"&gt;</span><br />
+        <span>&lt;/datalist&gt;</span>
+      </code>
+
+      <h3>output</h3>
+
+      <code>
+        <label for="browser">Choose your browser:</label><br />
+        <input list="browsers" id="browser" name="browser" /><br />
+        <datalist id="browsers">
+          <option value="Chrome"></option>
+          <option value="Firefox"></option>
+          <option value="Safari"></option>
+          <option value="Edge"></option>
+          <option value="Opera"></option>
+        </datalist>
+      </code>
+
+      <hr />
+
+      <h2>The &lt;output&gt; Element</h2>
+
+      <p>
+        The <span>&lt;output&gt;</span> element represents the result of a
+        calculation or user action.
+      </p>
+
+      <code>
+        <span>&lt;label for="result"&gt;</span>Result:<span>&lt;/label&gt;</span
+        ><br />
+        <span>&lt;output id="result" name="result"&gt;</span>0<span
+          >&lt;/output&gt;</span
+        >
+      </code>
+
+      <h3>output</h3>
+
+      <code>
+        <label for="result">Result:</label><br />
+        <output id="result" name="result">0</output>
+      </code>
     </div>
   </body>
 </html>

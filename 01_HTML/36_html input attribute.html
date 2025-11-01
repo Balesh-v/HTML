@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="set1">
+        <h1>HTML Input Attributes</h1>
+        <p>This chapter describes the different attributes for the HTML <span>&lt;input&gt;</span> element.</p>
+        <hr>
+
+        <h2>The value Attribute</h2>
+        <p>The input <span>value</span> attribute specifies an initial value for an input field:</p>
+
+        <code>
+            &lt;input type="text" value="Hello World"&gt;
+        </code>
+        <p>This will  create a text input field with "Hello World" as the initial value.</p>
+
+        <code>
+            <input type="text" value="Hello World">
+        </code>
+        <hr>
+
+        <h2>The readonly Attribute</h2>
+        <p>The input <span>readonly</span> attribute makes an input field non-editable:</p>
+
+        <code>
+            &lt;input type="text" value="Hello World" readonly&gt;
+        </code>
+        <p>This will create a text input field with "Hello World" as the initial value, but the user will not be able to change it.</p>
+
+        <code>
+            <input type="text" value="Hello World" readonly>
+        </code>
+        <hr>
+
+        <h2>The disabled Attribute</h2>
+
+        <p>The input <span>disabled</span> attribute disables an input field, preventing user interaction:</p>
+
+        <code>
+            &lt;input type="text" value="Hello World" disabled&gt;
+        </code>
+        <p>This will create a text input field with "Hello World" as the initial value, but the user will not be able to interact with it.</p>
+
+        <code>
+            <input type="text" value="Hello World" disabled>
+        </code>
+        <hr>
+
+        <h2>The size Attribute</h2>
+
+        <p>The input <span>size</span> attribute specifies the width of an input field in characters:</p>
+
+        <code>
+            &lt;input type="text" size="30"&gt;
+
+        </code>
+
+        <p>This will create a text input field that is 30 characters wide.</p>
+
+        <code>
+            <input type="text" size="30">
+
+        </code>
+        <hr>
+
+        <h2>The maxlength Attribute</h2>
+
+        <p>The input <span>maxlength</span> attribute specifies the maximum number of characters allowed in an input field:</p>
+
+        <code>
+            &lt;input type="text" maxlength="10"&gt;
+
+        </code>
+
+        <p>This will create a text input field that allows a maximum of 10 characters.</p>
+
+        <code>
+            <input type="text" maxlength="10">
+
+        </code>
+
+        <hr>
+
+        <h2>The min and max Attributes</h2>
+        <p>The input <span>min</span> and <span>max</span> attributes specify the minimum and maximum values for numeric input fields:</p>
+
+        <code>
+            &lt;input type="number" min="1" max="10"&gt;
+
+        </code>
+
+        <p>This will create a number input field that only accepts values between 1 and 10.</p>
+
+        <code>
+            <input type="number" min="1" max="10">
+
+        </code>
+
+        <hr>
+
+        <h2>The placeholder Attribute</h2>
+
+        <p>The input <span>placeholder</span> attribute provides a hint to the user about what to enter in the input field:</p>
+
+        <code>
+            &lt;input type="text" placeholder="Enter your name"&gt;
+
+        </code>
+
+        <p>This will create a text input field with the placeholder text "Enter your name".</p>
+
+        <code>
+            <input type="text" placeholder="Enter your name">
+
+        </code>
+        <hr>
+
+        <h2>The multiple Attribute</h2>
+
+        <p>The input <span>multiple</span> attribute allows users to select multiple files in a file input field:</p>
+
+        <code>
+            &lt;input type="file" multiple&gt;
+
+        </code>
+
+        <p>This will create a file input field that allows multiple file selections.</p>
+
+        <code>
+            <input type="file" multiple>
+
+        </code>
+
+        <hr>
+
+        <h2>The pattern Attribute</h2>
+
+        <p>The input <span>pattern</span> attribute specifies a regular expression that the input field's value must match for validation:</p>
+
+        <code>
+            &lt;input type="text" pattern="[A-Za-z]{3,}"&gt;
+        </code>
+
+        <p>This will create a text input field that only accepts alphabetic characters with a minimum length of 3.</p>
+
+        <code>
+            <input type="text" pattern="[A-Za-z]{3,}">
+
+        </code>
+         <hr>
+
+         <h2>The required Attribute</h2>
+
+        <p>The input <span>required</span> attribute specifies that an input field must be filled out before submitting the form:</p>
+
+        <code>
+            &lt;input type="text" required&gt;
+
+        </code>
+
+        <p>This will create a text input field that must be filled out before the form can be submitted.</p>
+
+        <code>
+            <input type="text" required>
+        </code>
+        <hr>
+
+        <h2>The autofocus Attribute</h2>
+
+        <p>The input autofocus attribute specifies that an input field should automatically get focus when the page loads.</p>
+
+          <code>
+            &lt;input type="text" autofocus&gt;
+        </code>
+
+          <code>
+            <input type="text" autofocus>
+        </code>
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

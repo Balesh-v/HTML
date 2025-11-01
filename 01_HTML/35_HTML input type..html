@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="set1">
+        <h1>HTML Input Types</h1>
+        <p>HTML provides various input types to create different types of user interface controls.</p>
+        <ul>
+            <li><strong>text</strong>: A single-line text input field.</li>
+            <li><strong>password</strong>: A text field that masks the input for privacy.</li>
+            <li><strong>email</strong>: An input field for email addresses with validation.</li>
+            <li><strong>number</strong>: An input field for numeric values with increment/decrement controls.</li>
+            <li><strong>date</strong>: An input field for selecting dates from a calendar.</li>
+            <li><strong>checkbox</strong>: A box that can be checked or unchecked to select options.</li>
+            <li><strong>radio</strong>: A circular button that allows selection of one option from a group.</li>
+            <li><strong>file</strong>: An input field for uploading files from the user's device.</li>
+            <li><strong>submit</strong>: A button that submits the form data to the server.</li>
+        </ul>
+
+        <p>These input types enhance user experience by providing appropriate controls for different types of data entry.</p>
+
+        <div id="examples">
+            <h2>Examples</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="0"><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <label for="hobbies">Hobbies:</label>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                <label for="traveling">Traveling</label><br><br>
+
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file"><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+        <div id="output">
+            <h2>Form Data</h2>
+            <pre id="formData"></pre>
+        </div>
+
+        
+
+    </div>
+</body>
+</html>

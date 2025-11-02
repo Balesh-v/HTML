@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="set1">
+        <h1>form Attribute</h1>
+        <p>The <span>input</span> form attribute specifies the form the <span>&lt;input&gt;</span> element belongs to. <br> The value of this attribute must be equal to the id attribute of the &lt;form&gt; element it belongs to.</p>
+
+        <code>
+            &lt;form id="myForm"  action="/action_page.php" &gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="firstname"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="lastname"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt; <br>
+            &lt;/form&gt; <br><br>
+
+        </code>
+
+        <code>
+            <form action="sumbit.html">
+                <input type="text" name="firstname" placeholder="First Name"><br>
+                <input type="text" name="lastname" form="myForm" placeholder="Last Name"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </code><hr>
+
+        <h2>The formaction Attribute</h2>
+        <p>The input <span>formaction</span> attribute specifies the URL of the file that will process the input when the form is submitted. <br> This attribute overrides the <span>action</span> attribute of the <span> &lt;form&gt;</span> element. <br> The formaction attribute works with the following input types: submit and image.</p>
+        
+         <code>
+            &lt;form id="myForm"  action="/action_page.php" &gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="firstname"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="lastname"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" formaction="/action_page2.php" value="Submit as admin"&gt; <br>
+            &lt;/form&gt; <br><br>
+        </code>
+        <code>
+            <form id="myForm" action="submit.html">
+                <input type="text" name="firstname" placeholder="First Name"><br>
+                <input type="text" name="lastname" placeholder="Last Name"><br>
+                <input type="submit" value="Submit"><br>
+                <input type="submit" formaction="sumbit.html" value="Submit as admin">
+            </form>
+        </code><hr>
+
+        <h2>The formenctype Attribute</h2>
+        <p>The input <span>formenctype</span> attribute specifies how the form data should be encoded when submitting it to the server. <br> This attribute overrides the enctype attribute of the &lt;form&gt; element. <br> The formenctype attribute works with the following input types: submit and image.</p>
+        
+         <code>
+            &lt;form id="myForm"  action="/action_page.php" enctype="text/plain"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="firstname"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="lastname"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" formenctype="multipart/form-data" value="Submit as admin"&gt; <br>
+            &lt;/form&gt; <br><br>
+        </code>
+        <code>
+            <form id="myForm" action="submit.html" enctype="text/plain">
+                <input type="text" name="firstname" placeholder="First Name"><br>
+                <input type="text" name="lastname" placeholder="Last Name"><br>
+                <input type="submit" value="Submit"><br>
+                <input type="submit" formenctype="multipart/form-data" value="Submit as admin">
+            </form>
+        </code>
+        <hr>
+
+        <h2>The formmethod Attribute</h2>
+        <p>The input <span>formmethod</span> attribute specifies the HTTP method (GET or POST) to be used when submitting the form. <br> This attribute overrides the method attribute of the &lt;form&gt; element. <br> The formmethod attribute works with the following input types: submit and image.</p>
+
+            <code>
+                &lt;form id="myForm"  action="/action_page.php" method="get"&gt; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="firstname"&gt; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="lastname"&gt; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" formmethod="post" value="Submit as admin"&gt; <br>
+                &lt;/form&gt; <br><br>
+
+            </code>
+
+            <code>
+                <form id="myForm" action="submit.html" method="get">
+                    <input type="text" name="firstname" placeholder="First Name"><br>
+                    <input type="text" name="lastname" placeholder="Last Name"><br>
+                    <input type="submit" value="Submit"><br>
+                    <input type="submit" formmethod="post" value="Submit as admin">
+                </form>
+
+            </code>
+            <hr>
+
+    </div>
+
+
+</body>
+</html>

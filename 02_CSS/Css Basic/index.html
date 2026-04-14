@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Basic</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* <!-- ** Css Introduction --> */
+
+      /* <!--! What is CSS? --> */
+
+      /* <!-- ? CSS is the language we use to style a Web page. CSS stands for Cascading Style Sheets CSS     describes how HTML elements are to be displayed on screen, paper, or in other media CSS saves a lot of work. It can control the layout of multiple web pages all at once External stylesheets are stored in CSS files  */
+
+      /* <!-- ! CSS Syntax --> */
+
+      /*  <!--? A CSS rule consists of a selector and a declaration block: -->
+    <!--? The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon. --> */
+
+      h1 {
+        color: red;
+        text-align: center;
+      }
+
+      /* <!-- ! CSS selectors --> */
+
+      /*  <!--? CSS selectors are used to select the HTML elements you want to style. There are several types of CSS selectors: -->
+    <!--? 1. Element Selector: Selects elements by their tag name. -->
+    <!--? 2. Class Selector: Selects elements by their class attribute. -->
+    <!--? 3. ID Selector: Selects a single element by its ID attribute. -->
+    <!--? 4. Universal Selector: Selects all elements on the page. -->
+    <!--? 5. Attribute Selector: Selects elements based on their attributes. --> */
+
+      /* This page will explain the most basic CSS selectors. */
+
+      /* 1. Element Selector */
+
+      /* Selects elements by their tag name. */
+      p {
+        color: blue;
+      }
+
+      /* 2. Class Selector */
+      /* Selects elements by their class attribute. */
+      .highlight {
+        background-color: yellow;
+      }
+
+      /* 3. ID Selector */
+      /* Selects a single element by its ID attribute. */
+      #unique {
+        font-weight: bold;
+      }
+
+      /* 4. Universal Selector */
+      /* Selects all elements on the page. */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* 5. Attribute Selector */
+      /* Selects elements based on their attributes. */
+      a[target="_blank"] {
+        color: green;
+      }
+
+      /* <!-- ! How to Add a Css --> */
+
+      /* <!--? There are three ways to insert a style sheet: -->
+      /* <!--? 1. Inline CSS: By using the style attribute inside HTML elements. -->
+      /* <!--? 2. Internal CSS: By using a <style> element in the head section. -->
+      /* <!--? 3. External CSS: By linking to an external CSS file using the <link> element. -->
+
+
+     External CSS 
+
+     With an external style sheet, you can change the look of an entire website by changing just one file! Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section. The <link> element should have the rel attribute set to "stylesheet" and the href attribute set to the path of the CSS file.
+
+
+    Internal CSS
+
+    With internal CSS, you can define a style for a single HTML page. To use internal CSS, add a <style> element to the head section of the HTML page. Inside the <style> element, you can write your CSS rules.
+
+    Inline CSS
+
+    With inline CSS, you can apply a unique style to a single HTML element. To use inline CSS, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+    */
+    </style>
+  </head>
+  <body>
+    <h1>CSS Basic</h1>
+    <p>This is a paragraph.</p>
+    <p class="highlight">This is a highlighted paragraph.</p>
+    <p id="unique">This is a unique paragraph.</p>
+    <a href="https://www.example.com" target="_blank"
+      >This is a link that opens in a new tab.</a
+    >
+    <h2>Subheading</h2>
+  </body>
+</html>

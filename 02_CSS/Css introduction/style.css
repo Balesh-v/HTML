@@ -1,3 +1,5 @@
+/* -------------------------- css syntax and external file--------------------- */
+
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +22,7 @@ h1{
     text-align: center;
     margin-top: 10px;
     font-family:  monospace;
-    /* color: red; */
+  
 }
 p{
     text-align: center;

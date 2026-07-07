@@ -1,0 +1,33 @@
+body{
+   /*--------------------------- background color --------------------------------*/
+    background-color: lightblue;
+
+    /* background image  */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF-5ZBqrrmEkZUAYKR2WvHsMBabvnU2fnlJv_gtUsBEQ&s');
+
+    /* background repeat */
+    background-repeat: no-repeat;
+
+    /* background position */
+    background-position: center;
+
+    /* background size */
+    background-size: 100% 100%;
+}
+
+.container{
+    width: 80%;
+    margin: 18% auto;
+    padding: 20px;
+    background-color: white;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* background image */
+   
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH3YxIOmUXwO-OSogGqkYVANuBTrbq3vk_DsFFrxGFIg&s=10');
+}
+
